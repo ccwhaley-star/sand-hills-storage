@@ -5,30 +5,53 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page Not Found | Sand Hills Storage</title>
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#1E6FB8">
 <link rel="icon" type="image/jpeg" href="/img/logo.jpg">
+<link rel="apple-touch-icon" href="/img/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/styles.css">
+<style>
+  .nf {
+    min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; padding: 60px 24px;
+    background: linear-gradient(135deg, #F5F7FA 0%, #E8F1FA 100%);
+    text-align: center;
+  }
+  .nf .mark { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+  .nf .mark img { height: 52px; width: auto; }
+  .nf .mark .wordmark { display: flex; flex-direction: column; line-height: 1; font-weight: 700; }
+  .nf .mark .wordmark .name { font-size: 1.4rem; }
+  .nf .mark .wordmark .name .gray { color: var(--gray-dark); }
+  .nf .mark .wordmark .name .blue { color: var(--blue); }
+  .nf .mark .wordmark .sub { font-size: 0.7rem; letter-spacing: 0.32em; color: var(--gray); font-weight: 500; margin-top: 4px; text-align: center; padding-left: 0.32em; }
+  .nf .code {
+    font-size: 0.85rem; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--ochre-dark);
+    margin-bottom: 12px;
+  }
+  .nf h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); margin-bottom: 12px; }
+  .nf p { color: var(--gray-warm); max-width: 480px; margin: 0 auto 28px; }
+  .nf .links { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+</style>
 </head>
 <body>
-<header class="site-header">
-  <div class="inner">
-    <a class="brand" href="/" aria-label="Sand Hills Storage home">
-      <img src="/img/logo.jpg" alt="">
-      <span class="wordmark">
-        <span class="name"><span class="gray">Sand</span><span class="blue">Hills</span></span>
-        <span class="sub">STORAGE</span>
-      </span>
-    </a>
-  </div>
-</header>
-<section class="hero" style="text-align:center;">
-  <div class="container">
-    <h1>404 &mdash; Page Not Found</h1>
-    <p class="lede">The page you&rsquo;re looking for doesn&rsquo;t exist or has moved.</p>
+<main class="nf">
+  <a class="mark" href="/" aria-label="Sand Hills Storage home">
+    <img src="/img/logo.jpg" alt="">
+    <span class="wordmark">
+      <span class="name"><span class="gray">Sand</span><span class="blue">Hills</span></span>
+      <span class="sub">STORAGE</span>
+    </span>
+  </a>
+  <span class="code">404 &middot; Not Found</span>
+  <h1>This page took a wrong turn</h1>
+  <p>The page you&rsquo;re looking for doesn&rsquo;t exist or has moved. Try one of our locations or head back home.</p>
+  <div class="links">
     <a class="btn btn-primary" href="/">Back to Home</a>
+    <a class="btn btn-outline" href="/#locations">See Locations</a>
   </div>
-</section>
+</main>
 </body>
 </html>

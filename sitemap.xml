@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.sandhillstorage.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.sandhillstorage.com/locations/north-hutchinson.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.sandhillstorage.com/locations/south-hutchinson.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.sandhillstorage.com/locations/buhler.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.sandhillstorage.com/locations/haven.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.sandhillstorage.com/</loc><lastmod>2026-05-07</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.sandhillstorage.com/locations/north-hutchinson</loc><lastmod>2026-05-07</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.sandhillstorage.com/locations/south-hutchinson</loc><lastmod>2026-05-07</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.sandhillstorage.com/locations/buhler</loc><lastmod>2026-05-07</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.sandhillstorage.com/locations/haven</loc><lastmod>2026-05-07</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.sandhillstorage.com/faq</loc><lastmod>2026-05-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.sandhillstorage.com/tenant-protection</loc><lastmod>2026-05-08</lastmod><priority>0.6</priority></url>
 </urlset>
