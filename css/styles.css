@@ -602,7 +602,6 @@ section.alt .feature .icon::after { box-shadow: 0 0 0 3px var(--bg-soft); }
 .footer-brand .lockup { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
 .footer-brand .lockup img {
   height: 48px; width: auto;
-  background: #fff; padding: 4px; border-radius: 6px;
 }
 .footer-brand .lockup .wordmark { display: flex; flex-direction: column; line-height: 1; font-weight: 700; }
 .footer-brand .lockup .wordmark .name { font-size: 1.25rem; letter-spacing: -0.01em; color: #fff; }
