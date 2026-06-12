@@ -110,6 +110,8 @@ p { margin: 0 0 1em; }
 .btn-primary:hover { background: var(--blue-dark); color: #fff; }
 .btn-outline { background: transparent; color: var(--blue); border-color: var(--blue); }
 .btn-outline:hover { background: var(--blue); color: #fff; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.btn-row .btn { white-space: nowrap; }
 
 /* Hero */
 .hero {
