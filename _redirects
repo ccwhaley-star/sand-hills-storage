@@ -1,6 +1,16 @@
 # Force apex → www (primary canonical host)
 https://sandhillstorage.com/*  https://www.sandhillstorage.com/:splat  301!
 
+# Legacy IdeaTek paths → new Sand Hills pages (for traffic from old GBP listings,
+# bookmarks, search results, etc.). Works for both ideatekstorage.com (when
+# aliased / forwarded to this site) and any inbound link to /pages/<x>.
+/pages/sandhill         /locations/hutchinson            301!
+/pages/southhutchinson  /locations/south-hutchinson      301!
+/pages/buhler           /locations/buhler                301!
+/pages/haven            /locations/haven                 301!
+/pages/loginpay         /                                301!
+/pages/*                /                                301!
+
 # Legacy → new slug: north-hutchinson renamed to hutchinson
 /locations/north-hutchinson.html  /locations/hutchinson              301!
 /locations/north-hutchinson       /locations/hutchinson              301!
@@ -13,6 +23,14 @@ https://sandhillstorage.com/*  https://www.sandhillstorage.com/:splat  301!
 /locations/haven.html             /locations/haven                   301!
 /tenant-protection.html           /tenant-protection                 301!
 /faq.html                         /faq                               301!
+/blog.html                        /blog                              301!
+/blog/hutchcc-student-storage.html /blog/hutchcc-student-storage     301!
+/blog/choosing-storage-size.html  /blog/choosing-storage-size        301!
+/blog/climate-vs-drive-up.html    /blog/climate-vs-drive-up          301!
+/blog/kansas-weather-protection.html  /blog/kansas-weather-protection 301!
+/blog/moving-to-hutchinson.html   /blog/moving-to-hutchinson         301!
+/blog/5-things-people-forget.html /blog/5-things-people-forget       301!
+/blog/storage-during-renovation.html  /blog/storage-during-renovation 301!
 
 # Serve clean URLs from underlying .html files
 /locations/hutchinson          /locations/hutchinson.html         200
@@ -21,3 +39,11 @@ https://sandhillstorage.com/*  https://www.sandhillstorage.com/:splat  301!
 /locations/haven               /locations/haven.html              200
 /tenant-protection             /tenant-protection.html            200
 /faq                           /faq.html                          200
+/blog                          /blog.html                         200
+/blog/hutchcc-student-storage  /blog/hutchcc-student-storage.html 200
+/blog/choosing-storage-size    /blog/choosing-storage-size.html   200
+/blog/climate-vs-drive-up      /blog/climate-vs-drive-up.html     200
+/blog/kansas-weather-protection /blog/kansas-weather-protection.html 200
+/blog/moving-to-hutchinson     /blog/moving-to-hutchinson.html    200
+/blog/5-things-people-forget   /blog/5-things-people-forget.html  200
+/blog/storage-during-renovation /blog/storage-during-renovation.html 200
