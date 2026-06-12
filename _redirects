@@ -1,9 +1,13 @@
 # Force apex → www (primary canonical host)
 https://sandhillstorage.com/*  https://www.sandhillstorage.com/:splat  301!
 
+# Legacy → new slug: north-hutchinson renamed to hutchinson
+/locations/north-hutchinson.html  /locations/hutchinson              301!
+/locations/north-hutchinson       /locations/hutchinson              301!
+
 # Force .html URLs to clean URLs (avoids duplicate content)
 /index.html                       /                                  301!
-/locations/north-hutchinson.html  /locations/north-hutchinson        301!
+/locations/hutchinson.html        /locations/hutchinson              301!
 /locations/south-hutchinson.html  /locations/south-hutchinson        301!
 /locations/buhler.html            /locations/buhler                  301!
 /locations/haven.html             /locations/haven                   301!
@@ -11,7 +15,7 @@ https://sandhillstorage.com/*  https://www.sandhillstorage.com/:splat  301!
 /faq.html                         /faq                               301!
 
 # Serve clean URLs from underlying .html files
-/locations/north-hutchinson    /locations/north-hutchinson.html   200
+/locations/hutchinson          /locations/hutchinson.html         200
 /locations/south-hutchinson    /locations/south-hutchinson.html   200
 /locations/buhler              /locations/buhler.html             200
 /locations/haven               /locations/haven.html              200

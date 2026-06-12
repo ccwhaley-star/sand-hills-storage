@@ -63,23 +63,10 @@ p { margin: 0 0 1em; }
   display: flex; align-items: center; justify-content: space-between;
   padding: 14px 24px; max-width: var(--max); margin: 0 auto;
 }
-.brand { display: flex; align-items: center; gap: 12px; }
-.brand img { height: 48px; width: auto; }
-.brand .wordmark {
-  display: flex; flex-direction: column; line-height: 1; font-weight: 700;
-}
-.brand .wordmark .name { font-size: 1.35rem; letter-spacing: -0.01em; }
-.brand .wordmark .name .gray { color: var(--gray-dark); }
-.brand .wordmark .name .blue { color: var(--blue); }
-.brand .wordmark .sub {
-  font-size: 0.7rem; letter-spacing: 0.32em; color: var(--gray);
-  font-weight: 500; margin-top: 4px;
-  text-align: center; padding-left: 0.32em;
-}
+.brand { display: flex; align-items: center; }
+.brand img { height: 48px; width: auto; display: block; }
 @media (max-width: 480px) {
-  .brand .wordmark .name { font-size: 1.25rem; }
-  .brand .wordmark .sub { font-size: 0.65rem; letter-spacing: 0.3em; }
-  .brand img { height: 46px; }
+  .brand img { height: 44px; }
 }
 .nav { display: flex; align-items: center; gap: 28px; }
 .nav a { color: var(--gray-dark); font-weight: 500; font-size: 0.95rem; }
@@ -599,16 +586,8 @@ section.alt .feature .icon::after { box-shadow: 0 0 0 3px var(--bg-soft); }
 .site-footer h4 { color: #fff; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: 8px; }
-.footer-brand .lockup { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
-.footer-brand .lockup img {
-  height: 48px; width: auto;
-  background: #fff; padding: 4px; border-radius: 6px;
-}
-.footer-brand .lockup .wordmark { display: flex; flex-direction: column; line-height: 1; font-weight: 700; }
-.footer-brand .lockup .wordmark .name { font-size: 1.25rem; letter-spacing: -0.01em; color: #fff; }
-.footer-brand .lockup .wordmark .name .gray { color: #C7CDD6; }
-.footer-brand .lockup .wordmark .name .blue { color: #6CA8DC; }
-.footer-brand .lockup .wordmark .sub { font-size: 0.65rem; letter-spacing: 0.32em; color: #8893A4; font-weight: 500; margin-top: 4px; text-align: center; padding-left: 0.32em; }
+.footer-brand .lockup { display: flex; align-items: center; margin-bottom: 14px; }
+.footer-brand .lockup img { height: 48px; width: auto; display: block; }
 .footer-brand .veteran-badge { display: block; margin-top: 16px; text-align: left; }
 .footer-brand .veteran-badge img { display: block; width: 72px; height: auto; margin: 0; }
 .footer-bottom {
