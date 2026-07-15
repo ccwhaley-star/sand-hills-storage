@@ -50,5 +50,6 @@
     <a class="btn btn-outline" href="/#locations">See Locations</a>
   </div>
 </main>
+<script>;document.addEventListener("click",function(e){var a=e.target.closest("a[href]");if(!a)return;var h=a.getAttribute("href")||"";if(/\/login/i.test(h))return;if(/(\/pages\/rent|openreservation|\/reserve)/i.test(h)&&typeof gtag==="function"){gtag("event","rent_click",{event_category:"conversion_intent",event_label:h,transport_type:"beacon"})}},true);</script>
 </body>
 </html>
