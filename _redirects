@@ -36,6 +36,7 @@ http://www.ideatekstorage.com/*   https://www.sandhillstorage.com/:splat  301!
 /tenant-protection.html           /tenant-protection                 301!
 /faq.html                         /faq                               301!
 /blog.html                        /blog                              301!
+/blog/when-to-rent-a-storage-unit.html /blog/when-to-rent-a-storage-unit 301!
 /blog/hutchcc-student-storage.html /blog/hutchcc-student-storage     301!
 /blog/choosing-storage-size.html  /blog/choosing-storage-size        301!
 /blog/climate-vs-drive-up.html    /blog/climate-vs-drive-up          301!
@@ -52,6 +53,7 @@ http://www.ideatekstorage.com/*   https://www.sandhillstorage.com/:splat  301!
 /tenant-protection             /tenant-protection.html            200
 /faq                           /faq.html                          200
 /blog                          /blog.html                         200
+/blog/when-to-rent-a-storage-unit /blog/when-to-rent-a-storage-unit.html 200
 /blog/hutchcc-student-storage  /blog/hutchcc-student-storage.html 200
 /blog/choosing-storage-size    /blog/choosing-storage-size.html   200
 /blog/climate-vs-drive-up      /blog/climate-vs-drive-up.html     200

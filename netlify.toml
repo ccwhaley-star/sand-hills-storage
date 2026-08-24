@@ -58,10 +58,11 @@
   to = "/blog/5-things-people-forget"
   status = 301
 
-# No surviving equivalent — send these to the blog index.
+# The biggest single 404 across the portfolio — 25 views/quarter arriving cold
+# with no promotion. Written back as a post rather than dumped on the index.
 [[redirects]]
   from = "/blog/storeyourstuff"
-  to = "/blog"
+  to = "/blog/when-to-rent-a-storage-unit"
   status = 301
 
 [[redirects]]
