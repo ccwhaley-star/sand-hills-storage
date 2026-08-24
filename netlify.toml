@@ -1,0 +1,182 @@
+# Netlify configuration for sandhillstorage.com
+#
+# NOTE: this site also has a `_redirects` file holding the apex->www rule, the
+# legacy IdeaTek /pages/* rules, and the clean-URL 200 rewrites. Netlify
+# processes redirects declared HERE first, then falls through to `_redirects`.
+# Never add a `/blog/*` or `/locations/*` wildcard here — it would shadow the
+# 200 rewrites in `_redirects` and take the live pages down.
+
+# --- Dead IdeaTek blog URLs --------------------------------------------------
+# The old site's blog didn't carry over. GA4 (last 90d) shows ~96 pageviews
+# still landing on these slugs from search results and old links. Point each at
+# the closest surviving post, or at the blog index where nothing matches.
+# Listed individually and case-exact, matching what GA4 actually recorded.
+
+[[redirects]]
+  from = "/blog/Climate-controlled-storage"
+  to = "/blog/climate-vs-drive-up"
+  status = 301
+
+[[redirects]]
+  from = "/blog/prepareforstorm"
+  to = "/blog/kansas-weather-protection"
+  status = 301
+
+[[redirects]]
+  from = "/blog/five-factors"
+  to = "/blog/choosing-storage-size"
+  status = 301
+
+[[redirects]]
+  from = "/blog/finding-storage-unit"
+  to = "/blog/choosing-storage-size"
+  status = 301
+
+[[redirects]]
+  from = "/blog/successfulmove"
+  to = "/blog/moving-to-hutchinson"
+  status = 301
+
+[[redirects]]
+  from = "/blog/summer-move"
+  to = "/blog/moving-to-hutchinson"
+  status = 301
+
+[[redirects]]
+  from = "/blog/packing-storage-boxes"
+  to = "/blog/5-things-people-forget"
+  status = 301
+
+[[redirects]]
+  from = "/blog/You-May-Need"
+  to = "/blog/5-things-people-forget"
+  status = 301
+
+# No surviving equivalent — send these to the blog index.
+[[redirects]]
+  from = "/blog/storeyourstuff"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/Rec-Equipment"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/Autopay-benefits"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/Storing-Furniture"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/benefitfromstorage"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/helpful-tips"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/safestuff"
+  to = "/blog"
+  status = 301
+
+# --- Missing locations index -------------------------------------------------
+# There are four location pages but no /locations index; GA4 shows people
+# landing on the bare path. Send them to the homepage locations section.
+[[redirects]]
+  from = "/locations"
+  to = "/#locations"
+  status = 301
+
+[[redirects]]
+  from = "/locations/"
+  to = "/#locations"
+  status = 301
+
+# --- Guessed intent paths ----------------------------------------------------
+# Same set caught on the Reno, Labette and Bourbon sites; all confirmed 404ing
+# here. Sizes and pricing live in the homepage #sizes section.
+[[redirects]]
+  from = "/storage-units"
+  to = "/#sizes"
+  status = 301
+
+[[redirects]]
+  from = "/units"
+  to = "/#sizes"
+  status = 301
+
+[[redirects]]
+  from = "/self-storage"
+  to = "/#sizes"
+  status = 301
+
+[[redirects]]
+  from = "/sizes"
+  to = "/#sizes"
+  status = 301
+
+[[redirects]]
+  from = "/size-guide"
+  to = "/#sizes"
+  status = 301
+
+[[redirects]]
+  from = "/pricing"
+  to = "/#sizes"
+  status = 301
+
+[[redirects]]
+  from = "/rates"
+  to = "/#sizes"
+  status = 301
+
+# Rental intent — four facilities, so send them to pick one.
+[[redirects]]
+  from = "/rent"
+  to = "/#locations"
+  status = 301
+
+[[redirects]]
+  from = "/rent-now"
+  to = "/#locations"
+  status = 301
+
+[[redirects]]
+  from = "/rent-online"
+  to = "/#locations"
+  status = 301
+
+[[redirects]]
+  from = "/rent-storage"
+  to = "/#locations"
+  status = 301
+
+[[redirects]]
+  from = "/reserve"
+  to = "/#locations"
+  status = 301
+
+[[redirects]]
+  from = "/book-now"
+  to = "/#locations"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/#contact"
+  status = 301
+
+# Tenant portal login — matches the existing /pages/loginpay rule.
+[[redirects]]
+  from = "/login"
+  to = "/"
+  status = 301
