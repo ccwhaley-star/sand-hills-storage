@@ -1,6 +1,18 @@
 # Force apex → www (primary canonical host)
 https://sandhillstorage.com/*  https://www.sandhillstorage.com/:splat  301!
 
+# Retire the old IdeaTek domain. It was an alias on this site serving a full
+# duplicate copy; GA4 (90d) had it carrying more traffic than the canonical
+# host (798 sessions vs 547). Path-preserving 301 to Sand Hills.
+#
+# These MUST stay above the clean-URL 200 rewrites at the bottom of this file.
+# Netlify matches top-down and a 200 rewrite is terminal, so if /faq resolves
+# first the visitor is served the page on the old domain and never crosses over.
+https://ideatekstorage.com/*      https://www.sandhillstorage.com/:splat  301!
+https://www.ideatekstorage.com/*  https://www.sandhillstorage.com/:splat  301!
+http://ideatekstorage.com/*       https://www.sandhillstorage.com/:splat  301!
+http://www.ideatekstorage.com/*   https://www.sandhillstorage.com/:splat  301!
+
 # Legacy IdeaTek paths → new Sand Hills pages (for traffic from old GBP listings,
 # bookmarks, search results, etc.). Works for both ideatekstorage.com (when
 # aliased / forwarded to this site) and any inbound link to /pages/<x>.

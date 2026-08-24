@@ -7,40 +7,10 @@
 # 200 rewrites in `_redirects` and take the live pages down.
 
 # --- Retire the old IdeaTek domain -------------------------------------------
-# ideatekstorage.com is still an alias on this site and was serving a complete
-# duplicate copy of it. GA4 (90d) had it carrying MORE traffic than the
-# canonical domain — 798 sessions vs 547 — so visitors were reading Sand Hills
-# content under a different company's domain, and Google was free to index both
-# hosts as duplicates.
-#
-# Path-preserving 301 to the canonical host. This block MUST stay above the
-# slug rules below: netlify.toml is evaluated top-down, so if a slug rule
-# matches first the visitor gets redirected but stays stranded on the old
-# domain. Old blog slugs take two hops (host first, then slug), which is fine.
-
-[[redirects]]
-  from = "https://ideatekstorage.com/*"
-  to = "https://www.sandhillstorage.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.ideatekstorage.com/*"
-  to = "https://www.sandhillstorage.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://ideatekstorage.com/*"
-  to = "https://www.sandhillstorage.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://www.ideatekstorage.com/*"
-  to = "https://www.sandhillstorage.com/:splat"
-  status = 301
-  force = true
+# Lives at the TOP of `_redirects`, not here. A forced domain-level 301 in this
+# file loses to the clean-URL `200` rewrites in `_redirects`, so /faq and the
+# location and blog pages kept serving on the old domain. Putting it above
+# those rewrites in the same file is what actually works.
 
 # --- Dead IdeaTek blog URLs --------------------------------------------------
 # The old site's blog didn't carry over. GA4 (last 90d) shows ~96 pageviews
