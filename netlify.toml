@@ -6,6 +6,42 @@
 # Never add a `/blog/*` or `/locations/*` wildcard here — it would shadow the
 # 200 rewrites in `_redirects` and take the live pages down.
 
+# --- Retire the old IdeaTek domain -------------------------------------------
+# ideatekstorage.com is still an alias on this site and was serving a complete
+# duplicate copy of it. GA4 (90d) had it carrying MORE traffic than the
+# canonical domain — 798 sessions vs 547 — so visitors were reading Sand Hills
+# content under a different company's domain, and Google was free to index both
+# hosts as duplicates.
+#
+# Path-preserving 301 to the canonical host. This block MUST stay above the
+# slug rules below: netlify.toml is evaluated top-down, so if a slug rule
+# matches first the visitor gets redirected but stays stranded on the old
+# domain. Old blog slugs take two hops (host first, then slug), which is fine.
+
+[[redirects]]
+  from = "https://ideatekstorage.com/*"
+  to = "https://www.sandhillstorage.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.ideatekstorage.com/*"
+  to = "https://www.sandhillstorage.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://ideatekstorage.com/*"
+  to = "https://www.sandhillstorage.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.ideatekstorage.com/*"
+  to = "https://www.sandhillstorage.com/:splat"
+  status = 301
+  force = true
+
 # --- Dead IdeaTek blog URLs --------------------------------------------------
 # The old site's blog didn't carry over. GA4 (last 90d) shows ~96 pageviews
 # still landing on these slugs from search results and old links. Point each at
