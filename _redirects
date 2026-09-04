@@ -44,6 +44,9 @@ http://www.ideatekstorage.com/*   https://www.sandhillstorage.com/:splat  301!
 /blog/moving-to-hutchinson.html   /blog/moving-to-hutchinson         301!
 /blog/5-things-people-forget.html /blog/5-things-people-forget       301!
 /blog/storage-during-renovation.html  /blog/storage-during-renovation 301!
+/storage-near-hutchcc.html            /storage-near-hutchcc              301!
+/storage-buhler-yoder.html            /storage-buhler-yoder              301!
+/downtown-hutchinson-storage.html     /downtown-hutchinson-storage       301!
 
 # Serve clean URLs from underlying .html files
 /locations/hutchinson          /locations/hutchinson.html         200
@@ -61,3 +64,6 @@ http://www.ideatekstorage.com/*   https://www.sandhillstorage.com/:splat  301!
 /blog/moving-to-hutchinson     /blog/moving-to-hutchinson.html    200
 /blog/5-things-people-forget   /blog/5-things-people-forget.html  200
 /blog/storage-during-renovation /blog/storage-during-renovation.html 200
+/storage-near-hutchcc           /storage-near-hutchcc.html         200
+/storage-buhler-yoder           /storage-buhler-yoder.html         200
+/downtown-hutchinson-storage    /downtown-hutchinson-storage.html  200
