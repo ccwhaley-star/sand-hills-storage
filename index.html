@@ -11,8 +11,20 @@
 <link rel="apple-touch-icon" href="/img/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+<link rel="preload" as="image" imagesrcset="/img/hero-720.webp 720w, /img/hero.webp 1024w" imagesizes="100vw" fetchpriority="high">
 <link rel="stylesheet" href="/css/styles.css">
+<!-- Google tag (gtag.js) — loaded after paint -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-K7Y7NMLX5W');
+window.addEventListener('load',function(){setTimeout(function(){
+  var s=document.createElement('script');s.async=true;
+  s.src='https://www.googletagmanager.com/gtag/js?id=G-K7Y7NMLX5W';document.head.appendChild(s);
+},1000);});
+</script>
 <meta property="og:title" content="Self Storage in Hutchinson, Buhler & Haven, KS | Sand Hills Storage">
 <meta property="og:description" content="Four self-storage facilities in the Hutchinson, KS area. Climate-controlled units available.">
 <meta property="og:type" content="website">
@@ -49,14 +61,6 @@
   ]
 }
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K7Y7NMLX5W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-K7Y7NMLX5W");
-</script>
 </head>
 <body>
 
@@ -80,8 +84,10 @@
   </div>
 </header>
 
+<main id="main">
+
 <section class="hero">
-  <img class="hero-bg" src="/img/hero.webp" alt="Sandy path through the Sand Hills prairie near Hutchinson, Kansas" width="1024" height="683" loading="eager" fetchpriority="high">
+  <img class="hero-bg" src="/img/hero.webp" srcset="/img/hero-720.webp 720w, /img/hero.webp 1024w" sizes="100vw" alt="Sandy path through the Sand Hills prairie near Hutchinson, Kansas" width="1024" height="683" loading="eager" fetchpriority="high" decoding="async">
   <div class="container inner">
     <h1>Secure self storage in the Hutchinson, KS area</h1>
     <p class="lede lede-desktop">Four convenient self-storage facilities across Hutchinson, Buhler and Haven &mdash; including climate-controlled units in Hutchinson. Kansas-owned, month-to-month, no hidden fees.</p>
@@ -121,7 +127,7 @@
     <div class="locations-grid">
 
       <div class="location-card">
-        <a class="card-link" href="/locations/hutchinson"><div class="img"><img src="/img/north-hutch.jpg" alt="Sand Hills Storage facility on N Plum Street in Hutchinson, Kansas" loading="lazy" width="960" height="600"></div></a>
+        <a class="card-link" href="/locations/hutchinson"><div class="img"><img src="/img/north-hutch.webp" width="960" height="640" alt="Sand Hills Storage facility on N Plum Street in Hutchinson, Kansas" loading="lazy"></div></a>
         <div class="body">
           <a class="card-link" href="/locations/hutchinson"><h3>Hutchinson</h3></a>
           <div class="addr-wrap">
@@ -139,7 +145,7 @@
       </div>
 
       <div class="location-card">
-        <a class="card-link" href="/locations/south-hutchinson"><div class="img"><img src="/img/south-hutch.jpg" alt="Sand Hills Storage facility at 10 E Ave C in South Hutchinson, Kansas" loading="lazy" width="1200" height="601"></div></a>
+        <a class="card-link" href="/locations/south-hutchinson"><div class="img"><img src="/img/south-hutch.webp" width="960" height="481" alt="Sand Hills Storage facility at 10 E Ave C in South Hutchinson, Kansas" loading="lazy"></div></a>
         <div class="body">
           <a class="card-link" href="/locations/south-hutchinson"><h3>South Hutchinson</h3></a>
           <div class="addr-wrap">
@@ -157,7 +163,7 @@
       </div>
 
       <div class="location-card">
-        <a class="card-link" href="/locations/buhler"><div class="img"><img src="/img/buhler.jpg" alt="Sand Hills Storage facility at 305 Industrial Park Rd in Buhler, Kansas" loading="lazy" width="1200" height="847"></div></a>
+        <a class="card-link" href="/locations/buhler"><div class="img"><img src="/img/buhler.webp" width="960" height="678" alt="Sand Hills Storage facility at 305 Industrial Park Rd in Buhler, Kansas" loading="lazy"></div></a>
         <div class="body">
           <a class="card-link" href="/locations/buhler"><h3>Buhler</h3></a>
           <div class="addr-wrap">
@@ -175,7 +181,7 @@
       </div>
 
       <div class="location-card">
-        <a class="card-link" href="/locations/haven"><div class="img"><img src="/img/haven.jpg" alt="Sand Hills Storage facility at 601 E Arlington Rd in Haven, Kansas" loading="lazy" width="1200" height="686"></div></a>
+        <a class="card-link" href="/locations/haven"><div class="img"><img src="/img/haven.webp" width="960" height="549" alt="Sand Hills Storage facility at 601 E Arlington Rd in Haven, Kansas" loading="lazy"></div></a>
         <div class="body">
           <a class="card-link" href="/locations/haven"><h3>Haven</h3></a>
           <div class="addr-wrap">
@@ -355,16 +361,18 @@
   </div>
 </div>
 
+</main>
+
 <footer class="site-footer" id="contact">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="lockup"><img src="/img/logo-full-dark.png" alt="Sand Hills Storage" width="240" height="88"></div>
         <p>Self storage serving Hutchinson, South Hutchinson, Buhler and Haven, Kansas.</p>
-        <div class="veteran-badge"><img src="/img/veteran-owned.png" alt="Veteran Owned Business" loading="lazy" width="72" height="93"></div>
+        <div class="veteran-badge"><img src="/img/veteran-owned.webp" width="72" height="93" alt="Veteran Owned Business" loading="lazy"></div>
       </div>
       <div>
-        <h4>Locations</h4>
+        <h3 class="footer-heading">Locations</h3>
         <ul>
           <li><a href="/locations/hutchinson">Hutchinson Self Storage</a></li>
           <li><a href="/locations/south-hutchinson">South Hutchinson Self Storage</a></li>
@@ -373,7 +381,7 @@
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h3 class="footer-heading">Contact</h3>
         <ul>
           <li><a href="tel:+16205435925">(620) 543-5925</a></li>
           <li><a href="mailto:info@sandhillstorage.com">info@sandhillstorage.com</a></li>
@@ -381,7 +389,7 @@
         </ul>
       </div>
       <div>
-        <h4>Office Hours</h4>
+        <h3 class="footer-heading">Office Hours</h3>
         <ul>
           <li>Mon&ndash;Fri: 9am &ndash; 6pm</li>
           <li>Saturday: 9am &ndash; 6pm</li>
@@ -433,7 +441,12 @@
     });
   }
   const header = document.querySelector('.site-header');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 16);
+  let scrollTick = false;
+  const onScroll = () => {
+    if (scrollTick) return;
+    scrollTick = true;
+    requestAnimationFrame(() => { header.classList.toggle('scrolled', window.scrollY > 16); scrollTick = false; });
+  };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 </script>

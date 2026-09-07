@@ -15,8 +15,19 @@
 <meta name="ICBM" content="38.1108, -97.9298">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="/css/styles.css">
+<!-- Google tag (gtag.js) — loaded after paint -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-K7Y7NMLX5W');
+window.addEventListener('load',function(){setTimeout(function(){
+  var s=document.createElement('script');s.async=true;
+  s.src='https://www.googletagmanager.com/gtag/js?id=G-K7Y7NMLX5W';document.head.appendChild(s);
+},1000);});
+</script>
 <meta property="og:title" content="Climate-Controlled Self Storage in Hutchinson, KS | Sand Hills Storage">
 <meta property="og:description" content="Climate-controlled self storage at 4601 N Plum St, Hutchinson, KS — month-to-month rentals, online bill pay.">
 <meta property="og:type" content="website">
@@ -36,7 +47,7 @@
   "telephone":"+1-620-543-5925",
   "email":"info@sandhillstorage.com",
   "url":"https://www.sandhillstorage.com/locations/hutchinson",
-  "image":"https://www.sandhillstorage.com/img/north-hutch.jpg",
+  "image":"https://www.sandhillstorage.com/img/north-hutch.webp",
   "sameAs":["https://share.google/ut1SRzTFYR04KKYQt"],
   "priceRange":"$$",
   "openingHoursSpecification":[
@@ -85,14 +96,6 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are the units at the Hutchinson facility climate-controlled?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — every unit at our Hutchinson location (4601 N Plum St) is climate-controlled. Ideal for furniture, electronics, documents, photos, and instruments."}}, {"@type": "Question", "name": "What unit sizes are available at the Hutchinson facility?", "acceptedAnswer": {"@type": "Answer", "text": "Climate-controlled indoor sizes range from a 4x2 utility closet to a 10x20 office space (200 sq ft). Common residential sizes include 5x10 at $105/mo, 8x10 at $125/mo, 10x10 at $145/mo, 10x15 at $175/mo, and 10x20 at $265/mo. We also offer an outdoor 20x20 drive-up unit ($145/mo) and warehouse spaces (35x27 and 54x38). Call (620) 543-5925 for the full list and current availability."}}, {"@type": "Question", "name": "What are the office hours at the Hutchinson location?", "acceptedAnswer": {"@type": "Answer", "text": "Office hours are Monday through Saturday 9am-6pm and Sunday noon-4pm. Call (620) 543-5925 to reserve a unit."}}]}
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K7Y7NMLX5W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-K7Y7NMLX5W");
-</script>
 </head>
 <body>
 
@@ -115,6 +118,8 @@
     </nav>
   </div>
 </header>
+
+<main id="main">
 
 <section class="loc-hero">
   <div class="container">
@@ -250,16 +255,18 @@
   </div>
 </div>
 
+</main>
+
 <footer class="site-footer" id="contact">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="lockup"><img src="/img/logo-full-dark.png" alt="Sand Hills Storage" width="240" height="88"></div>
         <p>Self storage serving Hutchinson, South Hutchinson, Buhler and Haven, Kansas.</p>
-        <div class="veteran-badge"><img src="/img/veteran-owned.png" alt="Veteran Owned Business" loading="lazy" width="72" height="93"></div>
+        <div class="veteran-badge"><img src="/img/veteran-owned.webp" width="72" height="93" alt="Veteran Owned Business" loading="lazy"></div>
       </div>
       <div>
-        <h4>Locations</h4>
+        <h3 class="footer-heading">Locations</h3>
         <ul>
           <li><a href="/locations/hutchinson">Hutchinson Self Storage</a></li>
           <li><a href="/locations/south-hutchinson">South Hutchinson Self Storage</a></li>
@@ -268,7 +275,7 @@
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h3 class="footer-heading">Contact</h3>
         <ul>
           <li><a href="tel:+16205435925">(620) 543-5925</a></li>
           <li><a href="mailto:info@sandhillstorage.com">info@sandhillstorage.com</a></li>
@@ -276,7 +283,7 @@
         </ul>
       </div>
       <div>
-        <h4>Office Hours</h4>
+        <h3 class="footer-heading">Office Hours</h3>
         <ul>
           <li>Mon&ndash;Fri: 9am &ndash; 6pm</li>
           <li>Saturday: 9am &ndash; 6pm</li>
@@ -328,7 +335,12 @@
     });
   }
   const header = document.querySelector('.site-header');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 16);
+  let scrollTick = false;
+  const onScroll = () => {
+    if (scrollTick) return;
+    scrollTick = true;
+    requestAnimationFrame(() => { header.classList.toggle('scrolled', window.scrollY > 16); scrollTick = false; });
+  };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 </script>

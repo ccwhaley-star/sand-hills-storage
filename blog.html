@@ -11,8 +11,19 @@
 <link rel="apple-touch-icon" href="/img/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="/css/styles.css">
+<!-- Google tag (gtag.js) — loaded after paint -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-K7Y7NMLX5W');
+window.addEventListener('load',function(){setTimeout(function(){
+  var s=document.createElement('script');s.async=true;
+  s.src='https://www.googletagmanager.com/gtag/js?id=G-K7Y7NMLX5W';document.head.appendChild(s);
+},1000);});
+</script>
 <meta property="og:title" content="Storage Tips &amp; Local Guides for the Hutchinson Area | Sand Hills Storage">
 <meta property="og:description" content="Practical storage and moving advice for the Hutchinson, Buhler, and Haven area.">
 <meta property="og:type" content="website">
@@ -46,14 +57,6 @@
   ]
 }
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K7Y7NMLX5W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-K7Y7NMLX5W");
-</script>
 </head>
 <body>
 
@@ -77,6 +80,8 @@
   </div>
 </header>
 
+<main id="main">
+
 <section class="loc-hero">
   <div class="container">
     <p class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; Blog</p>
@@ -91,7 +96,7 @@
     <div class="blog-grid">
 
       <a class="blog-card" href="/blog/when-to-rent-a-storage-unit">
-        <div class="img"><img src="/img/south-hutch.jpg" alt="Drive-up storage units at Sand Hills Storage in South Hutchinson, Kansas" loading="lazy" width="1200" height="601"></div>
+        <div class="img"><img src="/img/south-hutch.webp" width="960" height="481" alt="Drive-up storage units at Sand Hills Storage in South Hutchinson, Kansas" loading="lazy"></div>
         <div class="body">
           <div class="meta"><span class="category">Storage Guide</span><span>7 min read</span></div>
           <h2>When It&rsquo;s Actually Time to Rent a Storage Unit</h2>
@@ -101,7 +106,7 @@
       </a>
 
       <a class="blog-card" href="/blog/hutchcc-student-storage">
-        <div class="img"><img src="/img/campus-fall-jd-1800x600.jpg" alt="Hutchinson Community College campus in fall" loading="lazy" width="1800" height="600"></div>
+        <div class="img"><img src="/img/campus-fall.webp" width="960" height="320" alt="Hutchinson Community College campus in fall" loading="lazy"></div>
         <div class="body">
           <div class="meta"><span class="category">Student Guide</span><span>6 min read</span></div>
           <h2>A Student's Guide to Storage at Hutchinson Community College</h2>
@@ -111,7 +116,7 @@
       </a>
 
       <a class="blog-card" href="/blog/choosing-storage-size">
-        <div class="img"><img src="/img/fox_marquee-lights.png" alt="Hutchinson Fox Theatre marquee — choosing the right storage unit size" loading="lazy" width="360" height="540" onerror="this.style.display='none'"></div>
+        <div class="img"><img src="/img/fox_marquee-lights.webp" width="360" height="540" alt="Hutchinson Fox Theatre marquee — choosing the right storage unit size" loading="lazy" onerror="this.style.display='none'"></div>
         <div class="body">
           <div class="meta"><span class="category">Storage Guide</span><span>7 min read</span></div>
           <h2>Choosing the Right Storage Unit Size in the Hutchinson Area</h2>
@@ -121,7 +126,7 @@
       </a>
 
       <a class="blog-card" href="/blog/climate-vs-drive-up">
-        <div class="img"><img src="/img/north-hutch.jpg" alt="Climate-controlled vs drive-up storage units in Hutchinson, KS" loading="lazy" width="600" height="375"></div>
+        <div class="img"><img src="/img/north-hutch.webp" width="960" height="640" alt="Climate-controlled vs drive-up storage units in Hutchinson, KS" loading="lazy"></div>
         <div class="body">
           <div class="meta"><span class="category">Storage Guide</span><span>6 min read</span></div>
           <h2>Climate-Controlled vs. Drive-Up Storage: Which Do You Need?</h2>
@@ -141,7 +146,7 @@
       </a>
 
       <a class="blog-card" href="/blog/moving-to-hutchinson">
-        <div class="img"><img src="/img/water-tower.jpg" alt="Hutchinson, KS water tower — moving to the Hutchinson area" loading="lazy" width="1536" height="1023"></div>
+        <div class="img"><img src="/img/water-tower.webp" width="960" height="639" alt="Hutchinson, KS water tower — moving to the Hutchinson area" loading="lazy"></div>
         <div class="body">
           <div class="meta"><span class="category">Moving Guide</span><span>9 min read</span></div>
           <h2>Moving to the Hutchinson Area? Here's What You Need to Know</h2>
@@ -184,16 +189,18 @@
   </div>
 </div>
 
+</main>
+
 <footer class="site-footer" id="contact">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="lockup"><img src="/img/logo-full-dark.png" alt="Sand Hills Storage" width="240" height="88"></div>
         <p>Self storage serving Hutchinson, South Hutchinson, Buhler and Haven, Kansas.</p>
-        <div class="veteran-badge"><img src="/img/veteran-owned.png" alt="Veteran Owned Business" loading="lazy" width="72" height="93"></div>
+        <div class="veteran-badge"><img src="/img/veteran-owned.webp" width="72" height="93" alt="Veteran Owned Business" loading="lazy"></div>
       </div>
       <div>
-        <h4>Locations</h4>
+        <h3 class="footer-heading">Locations</h3>
         <ul>
           <li><a href="/locations/hutchinson">Hutchinson Self Storage</a></li>
           <li><a href="/locations/south-hutchinson">South Hutchinson Self Storage</a></li>
@@ -202,7 +209,7 @@
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h3 class="footer-heading">Contact</h3>
         <ul>
           <li><a href="tel:+16205435925">(620) 543-5925</a></li>
           <li><a href="mailto:info@sandhillstorage.com">info@sandhillstorage.com</a></li>
@@ -210,7 +217,7 @@
         </ul>
       </div>
       <div>
-        <h4>Office Hours</h4>
+        <h3 class="footer-heading">Office Hours</h3>
         <ul>
           <li>Mon&ndash;Fri: 9am &ndash; 6pm</li>
           <li>Saturday: 9am &ndash; 6pm</li>
@@ -261,7 +268,12 @@
     });
   }
   const header = document.querySelector('.site-header');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 16);
+  let scrollTick = false;
+  const onScroll = () => {
+    if (scrollTick) return;
+    scrollTick = true;
+    requestAnimationFrame(() => { header.classList.toggle('scrolled', window.scrollY > 16); scrollTick = false; });
+  };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 </script>
