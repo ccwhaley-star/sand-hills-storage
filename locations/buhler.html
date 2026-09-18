@@ -155,7 +155,16 @@ gtag('js',new Date());gtag('config','G-K7Y7NMLX5W');
         </div>
       </div>
       <div class="map-embed">
-        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=305+Industrial+Park+Rd+Buhler+KS+67522&output=embed" title="Map to Sand Hills Storage Buhler"></iframe>
+        <div class="map-facade-wrap">
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-src="https://www.google.com/maps?q=305+Industrial+Park+Rd+Buhler+KS+67522&output=embed" title="Map to Sand Hills Storage Buhler" tabindex="-1" aria-hidden="true"></iframe>
+          <div class="map-facade">
+            <svg class="map-facade-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div class="map-facade-actions">
+              <button type="button" class="map-facade-load" aria-label="Show map: Map to Sand Hills Storage Buhler">Show map</button>
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=305+Industrial+Park+Rd+Buhler+KS+67522" target="_blank" rel="noopener" class="map-facade-directions">Get directions</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="related-callout" style="margin-top:32px">
@@ -337,5 +346,6 @@ gtag('js',new Date());gtag('config','G-K7Y7NMLX5W');
   onScroll();
 </script>
 <script>;document.addEventListener("click",function(e){var a=e.target.closest("a[href]");if(!a)return;var h=a.getAttribute("href")||"";if(/\/login/i.test(h))return;if(/(\/pages\/rent|openreservation|\/reserve)/i.test(h)&&typeof gtag==="function"){gtag("event","rent_click",{event_category:"conversion_intent",event_label:h,transport_type:"beacon"})}},true);</script>
+  <script src="/js/maps.js" defer></script>
 </body>
 </html>
