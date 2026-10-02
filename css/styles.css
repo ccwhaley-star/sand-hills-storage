@@ -1,3 +1,14 @@
+/* Arial resized to Inter's metrics, so text does not reflow when Inter arrives.
+   Without it the locations section jumped as the web font loaded (CLS 0.078). */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  size-adjust: 107.4%;
+  ascent-override: 90.2%;
+  descent-override: 22.48%;
+  line-gap-override: 0%;
+}
+
 :root {
   /* Type scale tokens (typography pass, Sept 2026) */
   --fs-xs: 0.75rem;    /* 12px: tags, captions, legal */
@@ -27,7 +38,7 @@
   --radius: 10px;
   --max: 1180px;
   --mobile-cta-h: 64px;
-  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font: 'Inter', 'Inter Fallback', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
