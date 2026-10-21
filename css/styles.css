@@ -84,9 +84,9 @@ p { margin: 0 0 1em; }
   padding: 14px 24px; max-width: var(--max); margin: 0 auto;
 }
 .brand { display: flex; align-items: center; }
-.brand img { height: 54px; width: auto; display: block; }
-@media (max-width: 480px) {
-  .brand img { height: 50px; }
+.brand img { height: 60px; width: auto; display: block; }
+@media (max-width: 560px) {
+  .brand img { height: 52px; }
 }
 .nav { display: flex; align-items: center; gap: 28px; }
 .nav a { color: var(--gray-dark); font-weight: 500; font-size: var(--fs-base); }
@@ -716,7 +716,7 @@ section.alt .feature .icon::after { box-shadow: 0 0 0 3px var(--bg-soft); }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: 8px; }
 .footer-brand .lockup { display: flex; align-items: center; margin-bottom: 14px; }
-.footer-brand .lockup img { height: 54px; width: auto; display: block; }
+.footer-brand .lockup img { height: 64px; width: auto; display: block; }
 .footer-brand .veteran-badge { display: block; margin-top: 16px; text-align: left; }
 .footer-brand .veteran-badge img { display: block; width: 72px; height: auto; margin: 0; }
 .footer-bottom {
