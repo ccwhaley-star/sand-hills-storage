@@ -24,7 +24,7 @@
   --blue-light: #E8F1FA;
   --ochre: #C8A062;
   --ochre-dark: #8A6834; /* was #A87E3F; darkened for WCAG AA (>=4.5:1) on white, soft and accent-chip backgrounds */
-  --gray: #8E9094;
+  --gray: #6B6E73; /* was #8E9094 (3.4:1); darkened for WCAG AA text contrast on white (>=4.5:1) */
   --gray-dark: #4A4D52;
   --gray-warm: #3A4049;
   --ink: #1F2937;
@@ -281,6 +281,9 @@ section.alt { background: var(--bg-soft); }
   font-size: var(--fs-lg); font-weight: 700; color: var(--ink);
   letter-spacing: -0.01em; margin-bottom: 12px; line-height: 1;
 }
+/* Dimensions lead; a type descriptor (Garage, Office) sits under them */
+.size-card .dims:has(+ .label) { margin-bottom: 6px; }
+.size-card .dims + .label { margin-bottom: 12px; }
 .size-card .visual {
   background: linear-gradient(135deg, #EAF1F8 0%, #DCE7F2 100%);
   border: 1px solid var(--blue-light);
