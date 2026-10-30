@@ -24,7 +24,7 @@
   --blue-light: #E8F1FA;
   --ochre: #C8A062;
   --ochre-dark: #8A6834; /* was #A87E3F; darkened for WCAG AA (>=4.5:1) on white, soft and accent-chip backgrounds */
-  --gray: #8E9094;
+  --gray: #6B6E73; /* was #8E9094 (3.4:1); darkened for WCAG AA text contrast on white (>=4.5:1) */
   --gray-dark: #4A4D52;
   --gray-warm: #3A4049;
   --ink: #1F2937;
