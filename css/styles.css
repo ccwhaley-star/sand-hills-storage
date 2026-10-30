@@ -281,6 +281,9 @@ section.alt { background: var(--bg-soft); }
   font-size: var(--fs-lg); font-weight: 700; color: var(--ink);
   letter-spacing: -0.01em; margin-bottom: 12px; line-height: 1;
 }
+/* Dimensions lead; a type descriptor (Garage, Office) sits under them */
+.size-card .dims:has(+ .label) { margin-bottom: 6px; }
+.size-card .dims + .label { margin-bottom: 12px; }
 .size-card .visual {
   background: linear-gradient(135deg, #EAF1F8 0%, #DCE7F2 100%);
   border: 1px solid var(--blue-light);
